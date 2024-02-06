@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom CSS to prevent columns from breaking */
+.custom-row::before,
+.custom-row::after {
+  display: none;
+}
+
+.left-column {
+  min-width: 20em;
+  /* margin-right: 5em; */
+}
+
+.right-column {
+  min-width: 45em;
+  /* margin-left: 5em; */
+}
+
+.resume-height {
+  min-height: 900px;
+}
+
+@page {
+  /* Hide page numbers */
+  size: auto;
+  margin: 0mm;
+
+  /* Hide date */
+  @top-right {
+    content: none;
+  }
+
+  /* Hide page title */
+  @top-center {
+    content: none;
+  }
+
+  /* Offset the page content to the left by 10mm (adjust the value as needed) */
+  margin-left: -48mm;
+}
+
+.professional-summary {
+  font-size: 0.85em;
+}
+
+@media print {
+  .element-to-hide {
+    display: none !important;
+  }
+
+  .professional-summary {
+    font-size: 1.0em;
+  }
+}
+
+.word-wrapper {
+  /* Set a max-width for the text container */
+  max-width: 100%;
+  /* Allow long words to break onto the next line */
+  word-wrap: break-word;
+  /* Add ellipsis (...) for text that overflows the container */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
