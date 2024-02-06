@@ -1,2 +1,2 @@
 # resume-builder
- A resume builder built with React + Vite.
+ An app that builds a resume in the Canadian standard. Built with React + Vite.
