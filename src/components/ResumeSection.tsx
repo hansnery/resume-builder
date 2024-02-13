@@ -29,7 +29,8 @@ const ResumeSection: React.FC<ResumeSectionProps> = ({
       id="inputField"
       placeholder={placeholder}
       value={value}
-      rows={6}
+      rows={9}
+      style={{ resize: 'none' }}
       maxLength={maxLength} // Apply maxLength attribute
       onChange={handleChange}
     />
